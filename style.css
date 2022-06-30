@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: hsl(30, 38%, 92%);
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 619px;
+}
+
+.img-card {
+	width: 18%;
+	height: 70%;
+}
+
+.desktop-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.movil-img {
+	display: none;
+}
+
+.info-card {
+	width: 16%;
+	height: 70%;
+	background-color: hsl(0, 0%, 100%);
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 0 1%;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.info-card h1 {
+	font-family: 'Fraunces', serif;
+}
+
+.price-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.price-card h2 {
+	font-family: 'Fraunces', serif;
+	font-size: 30px;
+	color: hsl(158, 36%, 37%);
+}
+
+.price-card p {
+	text-decoration: line-through;
+}
+
+.btn-card {
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(158, 36%, 37%);
+	text-align: center;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.btn-card:hover {
+	background-color: hsl(158, 36%, 25%); 
+}
+
+@media (max-width: 980px){
+	.card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		border: 1px solid red;
+	}
+
+	.img-card {
+		height: 40%;
+		width: 60%;
+	}
+
+	.desktop-img {
+		display: none;
+	}
+
+	.movil-img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.info-card {
+		width: 50%;
+		height: 40%;
+		padding: 5%;
+	}
+}
+
+@media (max-width: 425px) {
+	.card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		border: 1px solid red;
+	}
+
+	.img-card {
+		height: 40%;
+		width: 90%;
+	}
+
+	.desktop-img {
+		display: none;
+	}
+
+	.movil-img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.info-card {
+		width: 80%;
+		height: 40%;
+		padding: 5%;
+	}
+}
